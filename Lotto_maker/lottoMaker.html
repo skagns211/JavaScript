@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인생역전 로또 번호 생성기!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css"> 
+
+    <script>
+      function lottoN() {
+      let numbers = [];
+
+      for (let i = 0; i < 6; i++) {
+        numbers[i] = Math.floor(Math.random() * 45) + 1;
+        for (let j = 0; j < i; j++) {
+          if (numbers[i] === numbers[j]) {
+            i--;
+            break;
+          }  
+        }
+      }
+      let result = "";
+      for(k = 0; k < 6; k ++){
+        if(k > 0){
+        result += ", ";
+        }
+        result += numbers[k];
+      }
+      lotto.result.value = result;
+}
+    </script>
+</head>
+<body>
+    <div class="container">
+      <div class="maker">
+        <form name="lotto">
+          로또 당첨 번호 GET!<br><br>
+          <input class="text" type="text" name="result" readonly /><br><br>
+          <input class="button" type="button" value="생성!" onClick="lottoN()" /><br>
+        </form>
+      </div>
+    </div>
+</body>
+</html>
