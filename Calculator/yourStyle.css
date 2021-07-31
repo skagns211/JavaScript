@@ -1,0 +1,146 @@
+/* TODO : CSS파일을 편집하여 원하는 스타일의 계산기를 만들어보세요 :) */
+
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  box-sizing: border-box;
+  font-family: 'Righteous', cursive;
+  color: #000;
+}
+
+body {
+  background-image: url('./data/body.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #000;
+  background-size: 800px 700px;
+}
+
+/*
+  Calculator styles
+*/
+
+.container {
+  height: 100vh;
+  width: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: rgb(183, 13, 25);
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 30px 20px;
+  border-style: outset;
+  border-width: 10px;
+}
+
+.calculator__display--bare {
+  display: none;
+  background-color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 25px 15px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  color: white;
+}
+
+.calculator__display--bare > span {
+  display: inline-block;
+  text-align: center;
+  background-color: #f3f0fc;
+  margin: 5px;
+  width: 37px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 5px;
+  
+}
+
+.calculator__display--for-advanced {
+  background-color: #b69436;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: right;
+  vertical-align: middle;
+  padding: 25px 15px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.calculator__buttons {
+  background-color: #b69436;
+  width: 100%;
+  height: 330px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.clear__and__enter {
+  height: 50px;
+  margin: 10px;
+  background-color: #b69436;
+}
+
+.clear__and__enter > button {
+  border-radius: 10px;
+  width: 110px;
+  height: 40px;
+  margin: 0px 5px;
+  background-color: #cf4030;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.button__row {
+  height: 50px;
+  margin: 10px;
+  background-color: #b69436;
+  display: flex;
+  justify-content: center;
+}
+
+.button__row > button {
+  width: 50px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  background-color: #ebebeb;
+}
+
+.button__row > .operator {
+  color: #ffffff;
+  background-color: #cf4030;
+}
+
+.button__row > .double {
+  width: 115px;
+}
+
+.button__row > .isPressed {
+  background-color: #00da75;
+}
+
+.logo {
+  position: fixed;
+  padding: 30px;
+  bottom: 0px;
+  right: 0px;
+}
