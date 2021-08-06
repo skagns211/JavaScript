@@ -69,7 +69,19 @@
     background-color: #0b1b23c3;
     padding-bottom: 1rem;
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 2rem;
+  }
+  
+  .failure-message {
+    color: red;
+  }
+
+  .success-message {
+    color: green;
+  }
+
+  .mismatch-message {
+    color: red;
   }
   
   .signUp {
