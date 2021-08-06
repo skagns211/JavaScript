@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전설의 리그</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="validator.js"></script>
+  <style>
+    html,body,div, video {margin:0;padding:0;}
+    body {padding:0px, 0px, 0px, 0px; margin:0px, 0px, 0px, 0px; overflow:hidden; background-color:#000; } .video {}
+    </style>
+</head>
+
+<body>
+  <body>
+    <div class='video'>
+      <video width="100%" height="100%" autoplay loop muted>
+         <source src="./data/back.mp4" type="video/mp4">
+        지원하지 않는 브라우저입니다.
+     </video>
+    </div>
+
+  
+  
+  <div id="container">
+    <div class="all">
+    <h1 class="signUp">Sign Up</h1>
+    <div class="userId">
+      <label>ID</label><br>
+      <input type="text" id="username">
+      <div class="failure-message hide">아이디는 네 글자 이상이어야 합니다</div>
+      <div class="success-message hide">사용할 수 있는 아이디입니다</div>
+   </div>
+
+    <div class="userPassword">
+      <label>Password</label><br>
+      <input type="password" id="password"> 
+    </div>
+
+    <div class="re-userPassword">
+      <label>Retype Password</label><br>
+      <input type="password" id="password-retype">
+      <div class="mismatch-message hide">비밀번호가 서로 다릅니다</div>
+   </div>
+
+    <div class="confirm">
+      <button>Confirm</button>
+    </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
