@@ -13,8 +13,8 @@ https://user-images.githubusercontent.com/85797255/128541281-65ecf699-aea4-4b3f-
 
 5. BMW
 
-<<<<<<< HEAD
 https://user-images.githubusercontent.com/85797255/133453424-dc9c6a33-ef84-41a7-8a89-7e7ace0f30a2.mp4
-=======
-https://user-images.githubusercontent.com/85797255/133465498-d285e547-2094-48c8-ab95-261ef54d2c0b.mp4
->>>>>>> ff82e675c4863f30aea3a9b518e6ce6489efd64f
+
+6. Movie app
+
+![](https://images.velog.io/images/skagns211/post/40d26e38-3db7-4754-881b-f8cf959f0c36/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-10-01%2018.57.27.png)
