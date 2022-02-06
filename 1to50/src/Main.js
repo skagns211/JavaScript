@@ -15,6 +15,7 @@ const StartBtn = styled.button`
   margin-top: 1rem;
   width: 10rem;
   height: 5rem;
+  font-size: 2rem;
 `;
 
 const arr = [];

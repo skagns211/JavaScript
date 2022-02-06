@@ -24,7 +24,7 @@ const StyledBoxOver = styled.span`
   color: white;
   height: 95%;
   cursor: pointer;
-  background-color: #f09669;
+  background-color: #0da399;
 `;
 
 function Box({ numbers, clickBox, playingGame }) {
