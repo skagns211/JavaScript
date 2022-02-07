@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
-import Board from "./components/Board";
-import Timer from "./components/Timer";
+import Board from "../components/Board";
+import Timer from "../components/Timer";
 
 const StyledMain = styled.div`
   display: flex;
