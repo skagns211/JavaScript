@@ -1,5 +1,5 @@
 import React from "react";
-import useNavigate, { Navigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const StyleEnter = styled.div`
@@ -15,9 +15,13 @@ const EnterBtn = styled.button`
 `;
 
 function Enter() {
+  const navigate = useNavigate();
+  const clickEnter = () => {
+    navigate("/game");
+  };
   return (
     <StyleEnter>
-      <EnterBtn onClick={}>입장</EnterBtn>
+      <EnterBtn onClick={() => clickEnter()}>입장</EnterBtn>
     </StyleEnter>
   );
 }
