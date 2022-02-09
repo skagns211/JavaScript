@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Button, Divider, Loader } from "semantic-ui-react";
+import { Button, Divider } from "semantic-ui-react";
 
 const StyleItem = styled.div`
   .loading {
@@ -45,41 +45,29 @@ const StyleContainer = styled.div`
 `;
 
 function Item({ item, isLoading }) {
-  console.log(isLoading);
   const { image_link, name, price, description, category, product_type } = item;
   return (
     <StyleItem>
-      {isLoading && (
-        <div className="loading">
-          <Loader active inline="centered">
-            Loading..
-          </Loader>
+      <StyleContainer>
+        <div>
+          <img className="img" src={image_link} alt={name} />
         </div>
-      )}
-      {!isLoading && (
-        <>
-          <StyleContainer>
-            <div>
-              <img className="img" src={image_link} alt={name} />
-            </div>
-            <div className="container">
-              <div className="strong">
-                <strong className="name">{name}</strong>
-                <strong className="price">$ {price}</strong>
-                <span className="category">
-                  {category ? `${category} / ` : ""}
-                  {product_type}
-                </span>
-              </div>
-              <Button className="button">구매하기</Button>
-            </div>
-          </StyleContainer>
-          <Divider />
-          <div>
-            <p>{description}</p>
+        <div className="container">
+          <div className="strong">
+            <strong className="name">{name}</strong>
+            <strong className="price">$ {price}</strong>
+            <span className="category">
+              {category ? `${category} / ` : ""}
+              {product_type}
+            </span>
           </div>
-        </>
-      )}
+          <Button className="button">구매하기</Button>
+        </div>
+      </StyleContainer>
+      <Divider />
+      <div>
+        <p>{description}</p>
+      </div>
       <Divider />
     </StyleItem>
   );

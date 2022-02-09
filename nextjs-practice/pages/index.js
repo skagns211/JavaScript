@@ -38,6 +38,7 @@ export default function Home() {
     <StyleIndex>
       <Head>
         <title>HOME | Kim namhun</title>
+        <meta name="description" content="namhun"></meta>
       </Head>
       {isLoading && (
         <div className="loading">
