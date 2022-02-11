@@ -5,6 +5,7 @@ import Board from "../src/component/Board";
 import Timer from "../src/component/Timer";
 
 const StyledMain = styled.div`
+  border: 10px solid red;
   display: flex;
   justify-content: center;
   align-items: center;

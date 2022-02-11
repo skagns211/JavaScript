@@ -6,10 +6,12 @@ const StyledBoxUnder = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5rem;
+  font-size: 100%;
   text-shadow: -5px 0 #000, 0 1px #000, 1px 0 #000, 0 -5px #000;
   color: white;
-  height: 95%;
+  /* height: 95%; */
+  width: 100%;
+  height: 100%;
   cursor: pointer;
   background-color: #007d74;
 `;

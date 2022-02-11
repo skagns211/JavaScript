@@ -3,8 +3,9 @@ import styled from "styled-components";
 import Box from "./Box";
 
 const StyledBoard = styled.div`
-  width: 60rem;
-  height: 60rem;
+  border: 10px solid blue;
+  width: 50rem;
+  height: 50rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
