@@ -33,6 +33,7 @@ function Timer() {
     return () => {
       alert("당신의 기록은 " + record.current / 1000 + " 초 입니다!!");
       clearInterval(timer);
+      window.location.href = "/game";
     };
   }, []);
 

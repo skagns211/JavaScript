@@ -3,8 +3,14 @@ import { useRouter } from "next/router";
 import { Menu } from "semantic-ui-react";
 
 function Gnb() {
-  const activeItem = "home";
   const router = useRouter();
+  let activeItem;
+  if (router.asPath === "/") {
+    activeItem = "home";
+  } else {
+    activeItem = router.asPath.slice(1);
+  }
+
   const handleClick = (e, data) => {
     if (data.name === "home") {
       router.push("/");
