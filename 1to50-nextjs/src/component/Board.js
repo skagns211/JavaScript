@@ -4,8 +4,8 @@ import Box from "./Box";
 
 const StyledBoard = styled.div`
   border: 10px solid blue;
-  width: 50rem;
-  height: 50rem;
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);

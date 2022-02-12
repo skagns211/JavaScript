@@ -10,6 +10,8 @@ const StyledMain = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: auto;
+  height: 100vh;
 `;
 
 const StartBtn = styled.button`
