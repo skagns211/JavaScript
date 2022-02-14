@@ -12,8 +12,7 @@ const StyledMain = styled.div`
   flex-direction: column;
   margin: auto;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
 `;
 
 const StartBtn = styled.button`

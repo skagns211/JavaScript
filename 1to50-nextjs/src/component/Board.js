@@ -5,8 +5,6 @@ import Box from "./Box";
 const StyledBoard = styled.div`
   height: 23rem;
   width: 23rem;
-  max-width: 40rem;
-  max-height: 40rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
