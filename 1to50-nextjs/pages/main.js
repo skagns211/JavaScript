@@ -11,7 +11,7 @@ const StyledMain = styled.div`
   align-items: center;
   flex-direction: column;
   margin: auto;
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
 `;
 
