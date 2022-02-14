@@ -3,8 +3,8 @@ import styled from "styled-components";
 import Box from "./Box";
 
 const StyledBoard = styled.div`
-  height: 50rem;
-  width: 50rem;
+  height: 23rem;
+  width: 23rem;
   max-width: 40rem;
   max-height: 40rem;
   display: grid;

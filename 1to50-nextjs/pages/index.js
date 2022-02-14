@@ -8,12 +8,12 @@ const StyleEnter = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30rem;
+  height: 100vh;
 `;
 
 const EnterBtn = styled.button`
-  width: 10rem;
-  height: 5rem;
+  width: 7rem;
+  height: 3rem;
 `;
 
 export default function Home() {

@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 
 const StyledBoxUnder = styled.span`
-  border: 0.2rem solid blue;
+  border: 0.2rem solid white;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5rem;
+  font-size: 2.5rem;
   text-shadow: -5px 0 #000, 0 1px #000, 1px 0 #000, 0 -5px #000;
   color: white;
   height: 100%;
@@ -19,7 +19,7 @@ const StyledBoxOver = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5rem;
+  font-size: 2.5rem;
   text-shadow: -5px 0 #000, 0 1px #000, 1px 0 #000, 0 -5px #000;
   color: white;
   height: 100%;
