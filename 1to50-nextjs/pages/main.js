@@ -12,13 +12,15 @@ const StyledMain = styled.div`
   flex-direction: column;
   margin: auto;
   height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 `;
 
 const StartBtn = styled.button`
   margin-top: 1rem;
   width: 5rem;
   height: 3rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 `;
 
 const arr = [];

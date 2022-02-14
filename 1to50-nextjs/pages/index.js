@@ -9,6 +9,8 @@ const StyleEnter = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 `;
 
 const EnterBtn = styled.button`
