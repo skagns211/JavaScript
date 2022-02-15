@@ -31,8 +31,12 @@ function Timer() {
       });
     }, 20);
     return () => {
+      const result = {
+        record: `${record.current}` / 1000,
+      };
       alert("당신의 기록은 " + record.current / 1000 + " 초 입니다!!");
       clearInterval(timer);
+      localStorage.setItem("record", JSON.stringify(result));
       window.location.href = "/main";
     };
   }, []);
