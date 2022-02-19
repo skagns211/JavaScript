@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="container">
       <Seo title="Home" />
-      {!movies && <h4>Loading...</h4>}
+      {/* {!movies && <h4>Loading...</h4>} */}
       {movies?.map((el) => {
         const { id, original_title, poster_path } = el;
         return (
