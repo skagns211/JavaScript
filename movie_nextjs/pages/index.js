@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -6,6 +8,8 @@ import Seo from "../component/Seo";
 
 export default function Home() {
   const [movies, setMovies] = useState([]);
+  const router = useRouter();
+  console.log(router);
   useEffect(() => {
     (async () => {
       const { results } = await (await fetch(`/api/movies`)).json();
@@ -13,6 +17,10 @@ export default function Home() {
       console.log(results);
     })();
   }, []);
+  const clickHandle = (id) => {
+    console.log(id);
+    router.push(`/about/${id}`);
+  };
   return (
     <div className="container">
       <Seo title="Home" />
@@ -21,7 +29,10 @@ export default function Home() {
         const { id, original_title, poster_path } = el;
         return (
           <div className="movie" key={id}>
-            <img src={`https://image.tmdb.org/t/p/w500/${poster_path}`}></img>
+            <img
+              src={`https://image.tmdb.org/t/p/w500/${poster_path}`}
+              onClick={() => clickHandle(id)}
+            ></img>
             <h4>{original_title}</h4>
           </div>
         );
