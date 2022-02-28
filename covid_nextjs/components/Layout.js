@@ -32,6 +32,7 @@ const StyledLayout = styled.div`
   //! max-width 체크
   .container {
     max-width: 1400px;
+    margin: 0 auto;
     text-align: center;
   }
 `;

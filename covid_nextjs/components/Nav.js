@@ -1,12 +1,17 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 const Nav = () => {
   return (
     <StyledNav>
       <div className="tagContainer">
         <img src="/korea.svg"></img>
-        <span>선별진료소 찾기</span>
-        <span>예방접종센터 찾기</span>
+        <Link href="/">
+          <a>선별진료소 찾기</a>
+        </Link>
+        <Link href="/vaccine">
+          <a>예방접종센터 찾기</a>
+        </Link>
       </div>
     </StyledNav>
   );
