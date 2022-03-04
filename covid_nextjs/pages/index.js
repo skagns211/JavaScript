@@ -2,17 +2,17 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const Home = () => {
-  const [data, setData] = useState();
-  useEffect(async () => {
-    await axios.get("api/covid").then((res) => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios.get("api/covid").then((res) => {
       const { item } = res.data.response.body.items;
-      setData(item);
+      console.log(item);
+      setData([...data, item]);
     });
   }, []);
   console.log(data);
-  let sido = data?.filter((el) => el.sgguNm === "화성시");
-  let wh = data && data.map((el) => el);
-  console.log(wh);
+  // let sido = data.filter((el) => el.sgguNm === "화성시");
+  // let wh = data && data.map((el) => el);
 
   class Data {
     constructor(sido, sggu, tel, name) {
@@ -29,7 +29,9 @@ const Home = () => {
 
   return (
     <div>
-      <div>HI</div>
+      {data?.map((el, i) => (
+        <div key={i}>{el}</div>
+      ))}
     </div>
   );
 };
