@@ -34,6 +34,7 @@ export default function Home() {
       : alert("닉네임을 입력해주세요");
   };
   const inputName = (e) => {
+    console.log(e.value);
     isRank({ name: `${e.target.value}` });
   };
   const inputEnter = (e) => {
@@ -42,7 +43,7 @@ export default function Home() {
   return (
     <StyleEnter>
       <EnterName
-        onChange={(e) => inputName(e)}
+        onChange={(e) => console.log(e.target.value)}
         onKeyPress={inputEnter}
       ></EnterName>
       <EnterBtn onClick={() => clickEnter()}>입장</EnterBtn>
