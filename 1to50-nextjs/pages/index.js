@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <StyleEnter>
       <EnterName
-        onChange={(e) => console.log(e.target.value)}
+        onChange={(e) => isRank(e)}
         onKeyPress={inputEnter}
       ></EnterName>
       <EnterBtn onClick={() => clickEnter()}>입장</EnterBtn>
